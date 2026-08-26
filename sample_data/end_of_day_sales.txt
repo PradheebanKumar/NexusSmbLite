@@ -1,0 +1,43 @@
+================================================================
+        DAILY SALES SUMMARY — Sample Data
+        Date: 13-Apr-2024 (Yesterday)
+        Record this into Nexus-SMB at end of day
+================================================================
+
+HOW TO ENTER: Go to Sales page → select items → set quantity → Record
+
+Item Name              Qty Sold   Selling Price   Total
+--------------------------------------------------------
+Aavin Milk 500ml          35 pkt    ₹25            ₹875
+Modern Bread 400g         18 pkt    ₹28            ₹504
+Parle-G 100g              22 pkt    ₹5             ₹110
+Britannia Biscuit 100g    10 pkt    ₹10            ₹100
+Toor Dal (loose)           3 kg     ₹115           ₹345
+Boiled Rice (loose)        8 kg     ₹55            ₹440
+Sugar 1kg                  6 pkt    ₹48            ₹288
+Aavin Curd 200g           15 pkt    ₹22            ₹330
+Tea Powder 250g            4 pkt    ₹75            ₹300
+Eggs                      30 pcs    ₹7             ₹210
+Coconut Oil 500ml          2 btl    ₹90            ₹180
+Colgate 100g               3 pcs    ₹55            ₹165
+Sunflower Oil 1L           4 btl    ₹135           ₹540
+--------------------------------------------------------
+TOTAL REVENUE                                    ₹4,387
+========================================================
+
+EXPENSES YESTERDAY:
+  Rent (monthly split)    ₹100   → type: rent
+  Electricity (daily)     ₹80    → type: electricity
+  Transport / Auto        ₹60    → type: transport
+                        -------
+  Total Expenses          ₹240
+========================================================
+
+QUICK VOICE COMMANDS TO ENTER ABOVE IN CHAT:
+---------------------------------------------
+"Sold 35 milk packets today"
+"Sold 18 bread, 22 Parle-G, 10 Britannia biscuits today"
+"Sold 3 kg toor dal and 8 kg rice today"
+"Sold 6 sugar packets, 15 curd packets, 4 tea powder today"
+"Spent 100 rupees for rent, 80 for electricity, 60 for auto"
+================================================================

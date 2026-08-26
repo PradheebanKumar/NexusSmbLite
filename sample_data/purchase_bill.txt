@@ -1,0 +1,57 @@
+================================================================
+        RAVI TRADERS - WHOLESALE SUPPLIER
+        123, Market Street, Chennai - 600001
+        Ph: 9876500001  GSTIN: 33ABCDE1234F1Z5
+================================================================
+Bill No: RVT/2024/1847          Date: 14-Apr-2024
+Buyer  : Your Shop Name         Credit Days: 7
+================================================================
+
+S.No  Item Name              Qty    Unit   Rate(₹)  Amount(₹)
+----------------------------------------------------------------
+1     Aavin Milk 500ml        100   Pkt      20.00    2000.00
+2     Modern Bread (400g)      50   Pkt      22.00    1100.00
+3     Britannia Biscuit 100g   60   Pkt      10.00     600.00
+4     Parle-G 100g             80   Pkt       5.00     400.00
+5     Sunflower Oil 1L         20   Btl     110.00    2200.00
+6     Toor Dal (Loose) 10kg    10   Kg       95.00     950.00
+7     Boiled Rice (Loose) 25kg  4   Kg       42.00    1764.00
+8     Sugar 1kg Packet         30   Pkt      43.00    1290.00
+9     Colgate 100g Toothpaste  24   Pcs      52.00    1248.00
+10    Surf Excel 500g          20   Pkt      95.00    1900.00
+11    Aavin Curd 200g          40   Pkt      18.00     720.00
+12    Amul Butter 100g         15   Pcs      55.00     825.00
+13    Tea Powder 250g          25   Pkt      62.00    1550.00
+14    Coconut Oil 500ml        15   Btl      75.00    1125.00
+15    Eggs (Local)             10   Dozen    65.00     650.00
+
+================================================================
+                            Total Amount:  ₹18,322.00
+                            GST (5%):      ₹   916.10
+                            Grand Total:   ₹19,238.10
+================================================================
+Payment: Cash / UPI
+================================================================
+
+NOTE FOR SHOP ENTRY (add these to Nexus-SMB):
+----------------------------------------------
+These are your COST PRICES (what you paid supplier).
+
+Suggested SELLING PRICES for your shop:
+  Aavin Milk 500ml     → Sell at ₹25   (profit ₹5/pkt)
+  Modern Bread 400g    → Sell at ₹28   (profit ₹6/pkt)
+  Britannia Biscuit    → Sell at ₹10   (MRP — trade discount is your profit)
+  Parle-G 100g         → Sell at ₹5    (MRP fixed)
+  Sunflower Oil 1L     → Sell at ₹135  (profit ₹25/btl)
+  Toor Dal (loose/kg)  → Sell at ₹115  (profit ₹20/kg)
+  Boiled Rice (kg)     → Sell at ₹55   (profit ₹13/kg)
+  Sugar 1kg            → Sell at ₹48   (profit ₹5/pkt)
+  Colgate 100g         → Sell at ₹55   (MRP)
+  Surf Excel 500g      → Sell at ₹100  (MRP slightly below)
+  Aavin Curd 200g      → Sell at ₹22   (profit ₹4/pkt)
+  Amul Butter 100g     → Sell at ₹58   (MRP)
+  Tea Powder 250g      → Sell at ₹75   (profit ₹13/pkt)
+  Coconut Oil 500ml    → Sell at ₹90   (profit ₹15/btl)
+  Eggs (per egg)       → Sell at ₹7    (buy ₹65/dozen = ₹5.4/egg, sell ₹7)
+
+================================================================

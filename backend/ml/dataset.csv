@@ -1,0 +1,1169 @@
+text,intent
+buttermilk rate,PRICE_ENQUIRY
+good afternoon,GREETING
+cloves price enna bro,PRICE_ENQUIRY
+bread fresh illai pa,COMPLAINT
+do you hav groundnut oil,AVAILABILITY_CHECK
+beans price how much,PRICE_ENQUIRY
+price of brinjal,PRICE_ENQUIRY
+do u hav moong dal,AVAILABILITY_CHECK
+price of onion,PRICE_ENQUIRY
+coriander available ah,AVAILABILITY_CHECK
+rice price how much,PRICE_ENQUIRY
+coffee irukkuma sir,AVAILABILITY_CHECK
+is raw banana in stock,AVAILABILITY_CHECK
+hand wash cost enna da,PRICE_ENQUIRY
+how mch for wheat,PRICE_ENQUIRY
+unga shop enga iruku?,OUT_OF_SCOPE
+good morning sir?,GREETING
+orange vachu irukenga,AVAILABILITY_CHECK
+any watermelon avalaible,AVAILABILITY_CHECK
+ok thanks bro,THANKS
+hi anna?,GREETING
+is kirambu available,AVAILABILITY_CHECK
+idli rice kittaya,AVAILABILITY_CHECK
+bro onion evlo,PRICE_ENQUIRY
+hello bro?,GREETING
+bro curd evlo,PRICE_ENQUIRY
+i'll take 1kg rajma,BULK_ORDER
+do you have rava,AVAILABILITY_CHECK
+ok thanks,THANKS
+arisi evvalavu,PRICE_ENQUIRY
+cost of tea powder,PRICE_ENQUIRY
+manjal 1litre kudungal,BULK_ORDER
+good morning,GREETING
+price of nalla ennai,PRICE_ENQUIRY
+milagai avum cardamom avum iruka,MULTIPLE_ITEMS
+toor dal eppadi iruku price,PRICE_ENQUIRY
+wat is maida rate,PRICE_ENQUIRY
+10kg tamato pack panningla,BULK_ORDER
+good night!,GREETING
+hii!,GREETING
+upi teriyuma,OUT_OF_SCOPE
+shop address sollu?,OUT_OF_SCOPE
+is there murukku,AVAILABILITY_CHECK
+thanks,THANKS
+what does salt cost,PRICE_ENQUIRY
+book halfkg namkeen for me,BULK_ORDER
+vim also lizol also iruka,MULTIPLE_ITEMS
+have you got milagai,AVAILABILITY_CHECK
+kothamalli stock ah,AVAILABILITY_CHECK
+give me 12pieces vermicelli,BULK_ORDER
+beans stock there,AVAILABILITY_CHECK
+unga shop enga iruku,OUT_OF_SCOPE
+whatsapp number,OUT_OF_SCOPE
+guava 2packets kudungal,BULK_ORDER
+hey there,GREETING
+jeera avum beetroot avum iruka,MULTIPLE_ITEMS
+ghee 2packets kudungal,BULK_ORDER
+pattai price sollunga sir,PRICE_ENQUIRY
+what is ghee price,PRICE_ENQUIRY
+pazham and cauliflower stock iruka,MULTIPLE_ITEMS
+hi da!,GREETING
+how much is apple,PRICE_ENQUIRY
+how mch for pomegranate,PRICE_ENQUIRY
+is there curd,AVAILABILITY_CHECK
+idli rice avilable,AVAILABILITY_CHECK
+what time do you close,OUT_OF_SCOPE
+nandri,THANKS
+how much curd price ah,PRICE_ENQUIRY
+gpay panalam?,OUT_OF_SCOPE
+nalla ennai available ah,AVAILABILITY_CHECK
+how much cream price ah,PRICE_ENQUIRY
+apple price enna,PRICE_ENQUIRY
+chips price,PRICE_ENQUIRY
+good morning anna!,GREETING
+what is the price of pasta,PRICE_ENQUIRY
+wat is kirambu rate,PRICE_ENQUIRY
+1dozen coconut oil pack panningla,BULK_ORDER
+cost of manga,PRICE_ENQUIRY
+home delivery pannuveenga,OUT_OF_SCOPE
+do you sell maida and papaya,MULTIPLE_ITEMS
+what is pomegranate price,PRICE_ENQUIRY
+beetroot price sollu pa,PRICE_ENQUIRY
+good morning anna?,GREETING
+what is the price of urulaikizhangu,PRICE_ENQUIRY
+is vim in stock,AVAILABILITY_CHECK
+i'll take 2litre rava,BULK_ORDER
+vanakam sir?,GREETING
+hello,GREETING
+cinnamon available,AVAILABILITY_CHECK
+last time cauliflower was not fresh,COMPLAINT
+wat is cost of apple,PRICE_ENQUIRY
+always giving old stock,COMPLAINT
+coconut oil vangalam,AVAILABILITY_CHECK
+oneon rate enna,PRICE_ENQUIRY
+bro sona masoori iruka,AVAILABILITY_CHECK
+chana dal available,AVAILABILITY_CHECK
+got any chilli powder,AVAILABILITY_CHECK
+last time ladies finger was not fresh,COMPLAINT
+salt and atta iruka,MULTIPLE_ITEMS
+kurkure evlo aagum,PRICE_ENQUIRY
+namasthe!,GREETING
+do you have tea powder and bay leaf both,MULTIPLE_ITEMS
+ok ok,THANKS
+how much for rajma,PRICE_ENQUIRY
+cheese vilai enna,PRICE_ENQUIRY
+hello?,GREETING
+i'll take 2kg semolina,BULK_ORDER
+do you keep urad dal,AVAILABILITY_CHECK
+good night,GREETING
+is tea available,AVAILABILITY_CHECK
+hey bro?,GREETING
+oats vachu irukenga,AVAILABILITY_CHECK
+250g ghee tharuveenga,BULK_ORDER
+hello sir!,GREETING
+namasthe,GREETING
+groundnut oil available na sollunga,AVAILABILITY_CHECK
+hi there?,GREETING
+kirambu vachu irukenga,AVAILABILITY_CHECK
+ponni rice irukka pa,AVAILABILITY_CHECK
+paneer irukka pa,AVAILABILITY_CHECK
+minimum order for delivery,OUT_OF_SCOPE
+haai?,GREETING
+raw banana irukka pa,AVAILABILITY_CHECK
+bread was hard,COMPLAINT
+arisi stock iruka,AVAILABILITY_CHECK
+cinnamon irukka,AVAILABILITY_CHECK
+paneer in stock,AVAILABILITY_CHECK
+lays irukka,AVAILABILITY_CHECK
+rava available ah,AVAILABILITY_CHECK
+what is rate of boiled rice ah,PRICE_ENQUIRY
+anna rasam powder rate enna,PRICE_ENQUIRY
+what is rate of arisi ah,PRICE_ENQUIRY
+surf excel stock availble,AVAILABILITY_CHECK
+i need spinach and moong dal,MULTIPLE_ITEMS
+do you carry rajma,AVAILABILITY_CHECK
+anna mixture rate enna,PRICE_ENQUIRY
+paneer available,AVAILABILITY_CHECK
+do you take card,OUT_OF_SCOPE
+hi anna,GREETING
+suger available,AVAILABILITY_CHECK
+hi!,GREETING
+what is the price of potato,PRICE_ENQUIRY
+brinjal price please,PRICE_ENQUIRY
+mango irukkuma,AVAILABILITY_CHECK
+good evening!,GREETING
+tell me the price of rice,PRICE_ENQUIRY
+give me 1kg idli rice,BULK_ORDER
+olive oil vachu irukenga,AVAILABILITY_CHECK
+is tide in stock,AVAILABILITY_CHECK
+gpay accepted,OUT_OF_SCOPE
+pric of urulaikizhangu,PRICE_ENQUIRY
+book 2packets cauliflower for me,BULK_ORDER
+apple price enna bro,PRICE_ENQUIRY
+paneer proce,PRICE_ENQUIRY
+what is rate of milk ah,PRICE_ENQUIRY
+greetings?,GREETING
+is there surf excel,AVAILABILITY_CHECK
+gd morning,GREETING
+murukku available ah,AVAILABILITY_CHECK
+hey there?,GREETING
+thuvaram paruppu price please,PRICE_ENQUIRY
+what does cheese cost,PRICE_ENQUIRY
+do you carry boiled rice,AVAILABILITY_CHECK
+what are your working hours?,OUT_OF_SCOPE
+okra price,PRICE_ENQUIRY
+tamato price enna bro,PRICE_ENQUIRY
+greetings,GREETING
+what is the rate of refined oil,PRICE_ENQUIRY
+good night?,GREETING
+any idli rice left,AVAILABILITY_CHECK
+bro vermicelli evlo,PRICE_ENQUIRY
+tamarind stock ah,AVAILABILITY_CHECK
+do you have noodles and ghee,MULTIPLE_ITEMS
+what does cumin cost,PRICE_ENQUIRY
+spinach evlo aagum,PRICE_ENQUIRY
+are you open now?,OUT_OF_SCOPE
+tell me the price of jeera,PRICE_ENQUIRY
+howdy,GREETING
+beetroot evlo aagum,PRICE_ENQUIRY
+hi there,GREETING
+how much is boiled rice,PRICE_ENQUIRY
+hello!,GREETING
+do you hav apple,AVAILABILITY_CHECK
+price of lays,PRICE_ENQUIRY
+do you have manjal ah,AVAILABILITY_CHECK
+do you have thuvaram paruppu ah,AVAILABILITY_CHECK
+vim price how much,PRICE_ENQUIRY
+hiii,GREETING
+2kg pepper venum,BULK_ORDER
+dal was old,COMPLAINT
+vanakkam anna,GREETING
+how mch for shakkar,PRICE_ENQUIRY
+how mch is milk,PRICE_ENQUIRY
+cream avilable,AVAILABILITY_CHECK
+wht is prise of namkeen,PRICE_ENQUIRY
+chana dal and mutta stock iruka,MULTIPLE_ITEMS
+hi anna!,GREETING
+lizol eppadi iruku price,PRICE_ENQUIRY
+washing powder evvalavu,PRICE_ENQUIRY
+nalla iruku,THANKS
+can i get cumin,AVAILABILITY_CHECK
+kadugu rate enna,PRICE_ENQUIRY
+carrot tharuveenga,AVAILABILITY_CHECK
+semolina price sollu pa,PRICE_ENQUIRY
+tide stock there,AVAILABILITY_CHECK
+do you sell elachi,AVAILABILITY_CHECK
+beetroot stock there,AVAILABILITY_CHECK
+rava kidaikuma,AVAILABILITY_CHECK
+chips rate enna,PRICE_ENQUIRY
+good moorning,GREETING
+spinach kidaikuma,AVAILABILITY_CHECK
+thenga price,PRICE_ENQUIRY
+manjal vangalam,AVAILABILITY_CHECK
+whats up?,GREETING
+washing powder price enna,PRICE_ENQUIRY
+bread price,PRICE_ENQUIRY
+helo,GREETING
+namaskaram?,GREETING
+have you got manjal,AVAILABILITY_CHECK
+cloves prise,PRICE_ENQUIRY
+cost of oats,PRICE_ENQUIRY
+tomato in stock,AVAILABILITY_CHECK
+green chilli availabel,AVAILABILITY_CHECK
+fenugreek proce,PRICE_ENQUIRY
+do you have kurkure and maida both,MULTIPLE_ITEMS
+semolina vachu irukenga,AVAILABILITY_CHECK
+rate of milagai,PRICE_ENQUIRY
+hw much is refined oil,PRICE_ENQUIRY
+tell me the price of lizol,PRICE_ENQUIRY
+any tamarind avalaible,AVAILABILITY_CHECK
+murungakkai irukkuma,AVAILABILITY_CHECK
+hello pa!,GREETING
+have you got elachi,AVAILABILITY_CHECK
+bro 1packet manga vennum,BULK_ORDER
+500g toor dal kavanum,BULK_ORDER
+is hand wash in stock,AVAILABILITY_CHECK
+surf excel price how much,PRICE_ENQUIRY
+shampoo irukkanga,AVAILABILITY_CHECK
+hw much is cauliflower,PRICE_ENQUIRY
+do you take card?,OUT_OF_SCOPE
+thanks pa,THANKS
+do u have chips,AVAILABILITY_CHECK
+vegetables not fresh,COMPLAINT
+rasam powder stock ah,AVAILABILITY_CHECK
+oats rate sollunga,PRICE_ENQUIRY
+do u hav okra,AVAILABILITY_CHECK
+pattai vilai enna,PRICE_ENQUIRY
+anna rasam powder iruka,AVAILABILITY_CHECK
+phone number sollu,OUT_OF_SCOPE
+do you keep tea,AVAILABILITY_CHECK
+ok,THANKS
+vanakkam?,GREETING
+is milagu in stock,AVAILABILITY_CHECK
+buttermilk price enna bro,PRICE_ENQUIRY
+green chilli proce,PRICE_ENQUIRY
+what is the rate of cornflakes,PRICE_ENQUIRY
+is there sunflower oil,AVAILABILITY_CHECK
+pric of guava,PRICE_ENQUIRY
+hey bro,GREETING
+what does paal cost,PRICE_ENQUIRY
+anna 6pieces coriander venam,BULK_ORDER
+pazham available,AVAILABILITY_CHECK
+do you sell salt,AVAILABILITY_CHECK
+anna shampoo iruka,AVAILABILITY_CHECK
+bread not fresh,COMPLAINT
+delivery cost?,OUT_OF_SCOPE
+manga stock iruka,AVAILABILITY_CHECK
+coffee prce,PRICE_ENQUIRY
+price of wheat,PRICE_ENQUIRY
+maida eppadi iruku price,PRICE_ENQUIRY
+urulaikizhangu stock there,AVAILABILITY_CHECK
+murungakkai irukka pa,AVAILABILITY_CHECK
+book 2kg boiled rice for me,BULK_ORDER
+kadugu price enna bro,PRICE_ENQUIRY
+i want 2litre paneer,BULK_ORDER
+elachi avilable,AVAILABILITY_CHECK
+do u have ghee,AVAILABILITY_CHECK
+paal sour agiduchu,COMPLAINT
+do you have semolina ah,AVAILABILITY_CHECK
+got any sambar powder,AVAILABILITY_CHECK
+vengayam stock iruka bro,AVAILABILITY_CHECK
+i'll take 10kg okra,BULK_ORDER
+got any curd,AVAILABILITY_CHECK
+many thanks,THANKS
+do you have cauliflower and cloves,MULTIPLE_ITEMS
+1dozen kothamalli kavanum,BULK_ORDER
+oats cost enna,PRICE_ENQUIRY
+bro urad dal iruka,AVAILABILITY_CHECK
+how much does kadugu cost,PRICE_ENQUIRY
+plantain price sollunga sir,PRICE_ENQUIRY
+coconut kidaikuma,AVAILABILITY_CHECK
+6pieces kirambu kavanum,BULK_ORDER
+do you hav cardamom,AVAILABILITY_CHECK
+moong dal cost,PRICE_ENQUIRY
+unga shop timings enna,OUT_OF_SCOPE
+how much for vim,PRICE_ENQUIRY
+how old is your shop?,OUT_OF_SCOPE
+do you hav pomegranate,AVAILABILITY_CHECK
+cauliflower available pa,AVAILABILITY_CHECK
+tomato prise,PRICE_ENQUIRY
+bro 500g tea vennum,BULK_ORDER
+urad dal availabel,AVAILABILITY_CHECK
+vanakkam bro,GREETING
+good afternoon!,GREETING
+shop name,OUT_OF_SCOPE
+wht is prise of mutta,PRICE_ENQUIRY
+do you carry washing powder,AVAILABILITY_CHECK
+refined oil iruka,AVAILABILITY_CHECK
+toothpaste stock there,AVAILABILITY_CHECK
+yo!,GREETING
+delivery panreengala?,OUT_OF_SCOPE
+urulaikizhangu vilai enna,PRICE_ENQUIRY
+do you hav milk,AVAILABILITY_CHECK
+can you give 1litre shampoo,BULK_ORDER
+hai!,GREETING
+do you have turmeric ah,AVAILABILITY_CHECK
+how much is puli,PRICE_ENQUIRY
+kadugu also paal also iruka,MULTIPLE_ITEMS
+good evening?,GREETING
+jeera cost enna,PRICE_ENQUIRY
+gud morning!,GREETING
+rice tharuveenga,AVAILABILITY_CHECK
+what is your phone number?,OUT_OF_SCOPE
+hi sir,GREETING
+can i get pepper,AVAILABILITY_CHECK
+500ml semolina kavanum,BULK_ORDER
+thayir price sollunga sir,PRICE_ENQUIRY
+iz chana dal avaliable,AVAILABILITY_CHECK
+2packets vermicelli tharuveenga,BULK_ORDER
+rate of moong dal,PRICE_ENQUIRY
+how mch for toothpaste,PRICE_ENQUIRY
+cloves vilai enna,PRICE_ENQUIRY
+when do you open,OUT_OF_SCOPE
+heloo!,GREETING
+can you give 1packet tea,BULK_ORDER
+is tide availabl,AVAILABILITY_CHECK
+rava cost enna da,PRICE_ENQUIRY
+bay leaf rate enna,PRICE_ENQUIRY
+ladies finger and cheese iruka,MULTIPLE_ITEMS
+where are you located,OUT_OF_SCOPE
+do you have brinjel ah,AVAILABILITY_CHECK
+cauliflower cost enna da,PRICE_ENQUIRY
+good morning sir!,GREETING
+how much does vengayam cost,PRICE_ENQUIRY
+curd irukkuma,AVAILABILITY_CHECK
+maida stock there,AVAILABILITY_CHECK
+last time onion quality was poor,COMPLAINT
+k,THANKS
+namaskaram!,GREETING
+2kg grapes tharuveenga,BULK_ORDER
+mustard kidaikkuma,AVAILABILITY_CHECK
+1litre curd venum,BULK_ORDER
+book 500ml fenugreek for me,BULK_ORDER
+hello sir?,GREETING
+tea powder cost enna,PRICE_ENQUIRY
+milk was sour,COMPLAINT
+vanakkam,GREETING
+i want 2kg okra,BULK_ORDER
+any washing powder left,AVAILABILITY_CHECK
+can i get rava,AVAILABILITY_CHECK
+groundnut oil vangalam,AVAILABILITY_CHECK
+groundnut oil vilai sollu,PRICE_ENQUIRY
+raw rice available ah,AVAILABILITY_CHECK
+brinjel evvalavu,PRICE_ENQUIRY
+super,THANKS
+what is rate of shampoo ah,PRICE_ENQUIRY
+unga shop timings enna?,OUT_OF_SCOPE
+how much for jaggery,PRICE_ENQUIRY
+iz nalla ennai avaliable,AVAILABILITY_CHECK
+hello bro,GREETING
+do you have pazham and paal,MULTIPLE_ITEMS
+thanks bro,THANKS
+how mch for kurkure,PRICE_ENQUIRY
+hello there!,GREETING
+last time tamoto quality was poor,COMPLAINT
+is egg available,AVAILABILITY_CHECK
+wat is cost of mango,PRICE_ENQUIRY
+can you give 6pieces garam masala,BULK_ORDER
+call pannum number?,OUT_OF_SCOPE
+hey,GREETING
+online payment?,OUT_OF_SCOPE
+buttermilk kittaya,AVAILABILITY_CHECK
+heyy?,GREETING
+tomato price sollu pa,PRICE_ENQUIRY
+are you open now,OUT_OF_SCOPE
+any beans left,AVAILABILITY_CHECK
+do u hav tamato,AVAILABILITY_CHECK
+hai,GREETING
+namaste!,GREETING
+hii?,GREETING
+what does namkeen cost,PRICE_ENQUIRY
+refined oil irukkanga,AVAILABILITY_CHECK
+vellam price please,PRICE_ENQUIRY
+cumin kidaikuma,AVAILABILITY_CHECK
+beans tharuveenga,AVAILABILITY_CHECK
+whats up!,GREETING
+ponni rice prise,PRICE_ENQUIRY
+hw much is raw rice,PRICE_ENQUIRY
+namaskaram,GREETING
+what does refined oil cost,PRICE_ENQUIRY
+do you carry kurkure,AVAILABILITY_CHECK
+tomato was rotten,COMPLAINT
+vim avum mustard avum iruka,MULTIPLE_ITEMS
+do you sell sona masoori and olive oil,MULTIPLE_ITEMS
+i need 2kg of moru,BULK_ORDER
+bro pomegranate iruka,AVAILABILITY_CHECK
+buttermilk iruka,AVAILABILITY_CHECK
+boiled rice irukkanga,AVAILABILITY_CHECK
+miilk prise sollu,PRICE_ENQUIRY
+toothpaste rate sollunga,PRICE_ENQUIRY
+pric of gingelly oil,PRICE_ENQUIRY
+thanks a lot,THANKS
+paal stock availble,AVAILABILITY_CHECK
+anna pepper iruka,AVAILABILITY_CHECK
+chana dal vachu irukenga,AVAILABILITY_CHECK
+hw much is kurkure,PRICE_ENQUIRY
+is brinajl availabe,AVAILABILITY_CHECK
+manjal price enna,PRICE_ENQUIRY
+hello pa?,GREETING
+namkeen tharuveenga,AVAILABILITY_CHECK
+is rava availabl,AVAILABILITY_CHECK
+i need 12pieces of potato,BULK_ORDER
+oats price,PRICE_ENQUIRY
+brinjal stock iruka bro,AVAILABILITY_CHECK
+500g green chilli venum,BULK_ORDER
+vanakam sir,GREETING
+what is rate of curd ah,PRICE_ENQUIRY
+do you sell paal and urulaikizhangu,MULTIPLE_ITEMS
+i need egg and murungakkai,MULTIPLE_ITEMS
+hello bro!,GREETING
+rate of chana dal,PRICE_ENQUIRY
+what is the price of manjal,PRICE_ENQUIRY
+gud morning?,GREETING
+namkeen vilai enna,PRICE_ENQUIRY
+murungakkai price enna bro,PRICE_ENQUIRY
+pric of toothpaste,PRICE_ENQUIRY
+howdy?,GREETING
+onion was bad,COMPLAINT
+got any coconut oil,AVAILABILITY_CHECK
+can i get vermicelli,AVAILABILITY_CHECK
+thnx,THANKS
+500ml atta pack panningla,BULK_ORDER
+kothamalli irukka,AVAILABILITY_CHECK
+i need 500g of vengayam,BULK_ORDER
+ghee stock iruka bro,AVAILABILITY_CHECK
+5kg orange pack panningla,BULK_ORDER
+wht is prise of tometo,PRICE_ENQUIRY
+do you have vengayam ah,AVAILABILITY_CHECK
+mango avum lays avum iruka,MULTIPLE_ITEMS
+bro 1kg black gram vennum,BULK_ORDER
+super thanks,THANKS
+murukku rate,PRICE_ENQUIRY
+fenugreek evlo aagum,PRICE_ENQUIRY
+elachi rate sollunga,PRICE_ENQUIRY
+how much is lizol,PRICE_ENQUIRY
+give me 500ml puli,BULK_ORDER
+deliver panrengla,OUT_OF_SCOPE
+washing powder irukkuma sir,AVAILABILITY_CHECK
+milk was bad,COMPLAINT
+noodles iruka,AVAILABILITY_CHECK
+do you deliver?,OUT_OF_SCOPE
+do you have semolina and kirambu both,MULTIPLE_ITEMS
+i'll take 1packet ladies finger,BULK_ORDER
+brinjal kittaya,AVAILABILITY_CHECK
+anna wheat rate enna,PRICE_ENQUIRY
+vanakam?,GREETING
+thank you anna,THANKS
+tide available pa,AVAILABILITY_CHECK
+wrong item kudutheenga,COMPLAINT
+have you got rajma,AVAILABILITY_CHECK
+romba nandri,THANKS
+do u have tomato,AVAILABILITY_CHECK
+pottato available,AVAILABILITY_CHECK
+is nalla ennai available,AVAILABILITY_CHECK
+wat is brinjel rate,PRICE_ENQUIRY
+good morning anna,GREETING
+do u hav shampoo,AVAILABILITY_CHECK
+what time do you open?,OUT_OF_SCOPE
+cost of coconut,PRICE_ENQUIRY
+do you have maida and pasta,MULTIPLE_ITEMS
+do you sell thenga and butter,MULTIPLE_ITEMS
+bro hand wash evlo,PRICE_ENQUIRY
+got any shampoo,AVAILABILITY_CHECK
+anna thenga iruka,AVAILABILITY_CHECK
+helo there?,GREETING
+is biscuit availabl,AVAILABILITY_CHECK
+do you sell vengayam,AVAILABILITY_CHECK
+grapes tharuveenga,AVAILABILITY_CHECK
+price of coconut,PRICE_ENQUIRY
+hii,GREETING
+raw banana evlo,PRICE_ENQUIRY
+any milagu left,AVAILABILITY_CHECK
+how much for wheat,PRICE_ENQUIRY
+iz cardamom avaliable,AVAILABILITY_CHECK
+vermicelli eppadi iruku price,PRICE_ENQUIRY
+cardamom cost enna,PRICE_ENQUIRY
+hw much is ladies finger,PRICE_ENQUIRY
+cost of raw banana,PRICE_ENQUIRY
+both drumstick and kurkure iruka,MULTIPLE_ITEMS
+how mch for semolina,PRICE_ENQUIRY
+what time do you close?,OUT_OF_SCOPE
+cinnamon prce,PRICE_ENQUIRY
+lizol stock availble,AVAILABILITY_CHECK
+raw rice vilai sollu,PRICE_ENQUIRY
+wheat kittaya,AVAILABILITY_CHECK
+do you keep ladies finger,AVAILABILITY_CHECK
+any shampoo avalaible,AVAILABILITY_CHECK
+shop timing,OUT_OF_SCOPE
+haai,GREETING
+seri,THANKS
+both mutta and shakkar iruka,MULTIPLE_ITEMS
+wht is prise of atta,PRICE_ENQUIRY
+coriander availabel,AVAILABILITY_CHECK
+what is tamato price,PRICE_ENQUIRY
+is there nalla ennai,AVAILABILITY_CHECK
+gd morning?,GREETING
+washing powder price,PRICE_ENQUIRY
+do you sell cloves,AVAILABILITY_CHECK
+rasam powder and bay leaf iruka,MULTIPLE_ITEMS
+delivery charge?,OUT_OF_SCOPE
+book 2litre kirambu for me,BULK_ORDER
+pasta cost,PRICE_ENQUIRY
+thenga stock ah,AVAILABILITY_CHECK
+can you give halfkg tomato,BULK_ORDER
+do you sell sugar,AVAILABILITY_CHECK
+milk mosam sir,COMPLAINT
+surf excel and jeera available ah,MULTIPLE_ITEMS
+shampoo tharuveenga,AVAILABILITY_CHECK
+k thanks,THANKS
+wat is cost of olive oil,PRICE_ENQUIRY
+shop name?,OUT_OF_SCOPE
+thanks anna,THANKS
+the vengayam i bought was spoiled,COMPLAINT
+groundnut oil irukkuma sir,AVAILABILITY_CHECK
+how much is soap,PRICE_ENQUIRY
+can you give 1litre washing powder,BULK_ORDER
+milk quality not good,COMPLAINT
+cost of cream,PRICE_ENQUIRY
+is mixture in stock,AVAILABILITY_CHECK
+rate of rice,PRICE_ENQUIRY
+what is rate of refined oil ah,PRICE_ENQUIRY
+egg irukka pa,AVAILABILITY_CHECK
+murungakkai in stock,AVAILABILITY_CHECK
+how much for pasta,PRICE_ENQUIRY
+wht is prise of sambar powder,PRICE_ENQUIRY
+how much cauliflower price ah,PRICE_ENQUIRY
+oats rate,PRICE_ENQUIRY
+urad dal rate sollunga,PRICE_ENQUIRY
+i want halfkg vellam,BULK_ORDER
+gpay accepted?,OUT_OF_SCOPE
+pepper avilable,AVAILABILITY_CHECK
+rate of cabbage,PRICE_ENQUIRY
+coconut oil kittaya,AVAILABILITY_CHECK
+sona masoori avilable,AVAILABILITY_CHECK
+halfkg boiled rice vennum,BULK_ORDER
+thanks sir ok,THANKS
+when do you open?,OUT_OF_SCOPE
+anna 1packet thuvaram paruppu venam,BULK_ORDER
+mango evlo aagum,PRICE_ENQUIRY
+cream price sollu pa,PRICE_ENQUIRY
+delivery charge,OUT_OF_SCOPE
+do u have paneer,AVAILABILITY_CHECK
+how much does sona masoori cost,PRICE_ENQUIRY
+raw banana available ah,AVAILABILITY_CHECK
+thx,THANKS
+wat is cost of ladies finger,PRICE_ENQUIRY
+wat is detergent rate,PRICE_ENQUIRY
+heyy!,GREETING
+i want 2kg olive oil,BULK_ORDER
+pepper vangalam,AVAILABILITY_CHECK
+drumstick price please,PRICE_ENQUIRY
+maida rate sollunga,PRICE_ENQUIRY
+any kadugu avalaible,AVAILABILITY_CHECK
+manga price please,PRICE_ENQUIRY
+who is the owner,OUT_OF_SCOPE
+what is bread price,PRICE_ENQUIRY
+wheat prise,PRICE_ENQUIRY
+open sunday??,OUT_OF_SCOPE
+bro coriander iruka,AVAILABILITY_CHECK
+paneer rate enna,PRICE_ENQUIRY
+pottato cost enna,PRICE_ENQUIRY
+i need 1packet of shampoo,BULK_ORDER
+jaggery availabel,AVAILABILITY_CHECK
+what is the rate of plantain,PRICE_ENQUIRY
+do u hav vengayam,AVAILABILITY_CHECK
+i'll take 1litre raw rice,BULK_ORDER
+brinjel rate enna,PRICE_ENQUIRY
+rice had stones in it,COMPLAINT
+wht is prise of biscuit,PRICE_ENQUIRY
+wat is murungakkai rate,PRICE_ENQUIRY
+is lays availabl,AVAILABILITY_CHECK
+anna 2litre papaya venam,BULK_ORDER
+do you have papaya and refined oil both,MULTIPLE_ITEMS
+vanakkam anna!,GREETING
+do you have methi,AVAILABILITY_CHECK
+do you accept upi,OUT_OF_SCOPE
+moru kidaikkuma,AVAILABILITY_CHECK
+how much puli price ah,PRICE_ENQUIRY
+how mch for paal,PRICE_ENQUIRY
+both ladies finger and kirambu iruka,MULTIPLE_ITEMS
+salt irukka,AVAILABILITY_CHECK
+spinach vilai enna,PRICE_ENQUIRY
+how much for chana dal,PRICE_ENQUIRY
+both kothamalli and methi iruka,MULTIPLE_ITEMS
+vanakkam bro?,GREETING
+1kg maggi vennum,BULK_ORDER
+hello sir,GREETING
+any manjal left,AVAILABILITY_CHECK
+hi there!,GREETING
+do you hav brinjel,AVAILABILITY_CHECK
+coriander irukkuma,AVAILABILITY_CHECK
+i want 500ml refined oil,BULK_ORDER
+vellam available na sollunga,AVAILABILITY_CHECK
+thanks da,THANKS
+what time do you open,OUT_OF_SCOPE
+murukku available pa,AVAILABILITY_CHECK
+kirambu proce,PRICE_ENQUIRY
+ponni rice stock iruka bro,AVAILABILITY_CHECK
+is there grapes,AVAILABILITY_CHECK
+jeera stock availble,AVAILABILITY_CHECK
+contact number,OUT_OF_SCOPE
+milagai price sollunga sir,PRICE_ENQUIRY
+do you have gingelly oil and noodles both,MULTIPLE_ITEMS
+banana eppadi iruku price,PRICE_ENQUIRY
+heloo?,GREETING
+okra and lays stock iruka,MULTIPLE_ITEMS
+anna kathirikkai iruka,AVAILABILITY_CHECK
+order 1litre elachi,BULK_ORDER
+eggs were rotten,COMPLAINT
+what's up!,GREETING
+sup,GREETING
+idli rice stock iruka bro,AVAILABILITY_CHECK
+orange irukkuma sir,AVAILABILITY_CHECK
+do you have detergent,AVAILABILITY_CHECK
+rava evlo,PRICE_ENQUIRY
+gingelly oil cost,PRICE_ENQUIRY
+pattai irukkuma sir,AVAILABILITY_CHECK
+rice cost enna,PRICE_ENQUIRY
+tea powder eppadi iruku price,PRICE_ENQUIRY
+ok thnx,THANKS
+the tamoto i bought was spoiled,COMPLAINT
+how much for orange,PRICE_ENQUIRY
+upi teriyuma?,OUT_OF_SCOPE
+what's up,GREETING
+namasthe?,GREETING
+do you have nalla ennai ah,AVAILABILITY_CHECK
+directions to shop,OUT_OF_SCOPE
+i need manga and groundnut oil,MULTIPLE_ITEMS
+cheese rate,PRICE_ENQUIRY
+garam masala available na sollunga,AVAILABILITY_CHECK
+egg prise,PRICE_ENQUIRY
+hello pa,GREETING
+do u hav kathirikkai,AVAILABILITY_CHECK
+delivery panreengala,OUT_OF_SCOPE
+papaya price how much,PRICE_ENQUIRY
+online payment,OUT_OF_SCOPE
+how much raw banana price ah,PRICE_ENQUIRY
+delivery time?,OUT_OF_SCOPE
+what does idli rice cost,PRICE_ENQUIRY
+tea powder irukkuma,AVAILABILITY_CHECK
+murungakkai price enna,PRICE_ENQUIRY
+wat is cumin rate,PRICE_ENQUIRY
+10kg ladies finger tharuveenga,BULK_ORDER
+thanks sir,THANKS
+heyy,GREETING
+kothamalli vachu irukenga,AVAILABILITY_CHECK
+yesterday cauliflower was not good,COMPLAINT
+bro 6pieces tide vennum,BULK_ORDER
+rate of manga,PRICE_ENQUIRY
+orange cost enna da,PRICE_ENQUIRY
+maggi proce,PRICE_ENQUIRY
+carrot evlo aagum,PRICE_ENQUIRY
+tell me the price of beetroot,PRICE_ENQUIRY
+thnks,THANKS
+what is the price of biscuit,PRICE_ENQUIRY
+tell me the price of spinach,PRICE_ENQUIRY
+potato price sollu pa,PRICE_ENQUIRY
+raw banana 6pieces kudungal,BULK_ORDER
+good evening,GREETING
+hey bro!,GREETING
+maggi vilai sollu,PRICE_ENQUIRY
+is mixture availabl,AVAILABILITY_CHECK
+ok thank you,THANKS
+vanakkam anna?,GREETING
+do you sell tide,AVAILABILITY_CHECK
+moru available pa,AVAILABILITY_CHECK
+where are you located?,OUT_OF_SCOPE
+plantain cost,PRICE_ENQUIRY
+shakkar proce,PRICE_ENQUIRY
+bro coffee evlo,PRICE_ENQUIRY
+what is the price of jeera,PRICE_ENQUIRY
+how much cornflakes price ah,PRICE_ENQUIRY
+have you got ponni rice,AVAILABILITY_CHECK
+eppo open aagum,OUT_OF_SCOPE
+green chilli available pa,AVAILABILITY_CHECK
+give me 1dozen pepper,BULK_ORDER
+rasam powder irukka,AVAILABILITY_CHECK
+12pieces raw banana vennum,BULK_ORDER
+do you sell drumstick,AVAILABILITY_CHECK
+washing powder 2packets kudungal,BULK_ORDER
+paal kittaya,AVAILABILITY_CHECK
+drumstick available na sollunga,AVAILABILITY_CHECK
+what is the price of brinjel,PRICE_ENQUIRY
+what is the rate of vengayam,PRICE_ENQUIRY
+thenga irukkuma,AVAILABILITY_CHECK
+tamoto stock iruka,AVAILABILITY_CHECK
+hw much is moru,PRICE_ENQUIRY
+egss rate enna,PRICE_ENQUIRY
+cost of chilli powder,PRICE_ENQUIRY
+do you keep papaya,AVAILABILITY_CHECK
+tamoto evlo,PRICE_ENQUIRY
+idli rice tharuveenga,AVAILABILITY_CHECK
+surf excel and chana dal stock iruka,MULTIPLE_ITEMS
+ty,THANKS
+lizol rate,PRICE_ENQUIRY
+brinjel available pa,AVAILABILITY_CHECK
+is sugar availabl,AVAILABILITY_CHECK
+do you sell brinjel,AVAILABILITY_CHECK
+paneer rate,PRICE_ENQUIRY
+is atta availabl,AVAILABILITY_CHECK
+any cream avalaible,AVAILABILITY_CHECK
+delivery late agiduchu,COMPLAINT
+yesterday beans was not good,COMPLAINT
+hand wash price how much,PRICE_ENQUIRY
+rice quality illai bro,COMPLAINT
+grapes rate enna,PRICE_ENQUIRY
+i need thuvaram paruppu and cardamom,MULTIPLE_ITEMS
+do you keep beetroot,AVAILABILITY_CHECK
+black gram cost enna da,PRICE_ENQUIRY
+shop open ah,OUT_OF_SCOPE
+hi?,GREETING
+cumin also sona masoori also iruka,MULTIPLE_ITEMS
+how much is cheese,PRICE_ENQUIRY
+okay,THANKS
+what does shakkar cost,PRICE_ENQUIRY
+cream available na sollunga,AVAILABILITY_CHECK
+any cloves left,AVAILABILITY_CHECK
+anna 2packets coconut oil venam,BULK_ORDER
+oneon irukka,AVAILABILITY_CHECK
+do you hav watermelon,AVAILABILITY_CHECK
+tomato evlo,PRICE_ENQUIRY
+sunflower oil vilai sollu,PRICE_ENQUIRY
+onion quality illai,COMPLAINT
+got any ghee,AVAILABILITY_CHECK
+salt evvalavu,PRICE_ENQUIRY
+shampoo avilable,AVAILABILITY_CHECK
+good morning?,GREETING
+what are your working hours,OUT_OF_SCOPE
+mutta and fenugreek available ah,MULTIPLE_ITEMS
+do you have mixture and pepper,MULTIPLE_ITEMS
+kurkure rate enna,PRICE_ENQUIRY
+what is pasta price,PRICE_ENQUIRY
+hello there?,GREETING
+pepper evlo,PRICE_ENQUIRY
+how much does kurkure cost,PRICE_ENQUIRY
+any namkeen avalaible,AVAILABILITY_CHECK
+tea vangalam,AVAILABILITY_CHECK
+milk price enna bro,PRICE_ENQUIRY
+iz cumin avaliable,AVAILABILITY_CHECK
+drumstick available pa,AVAILABILITY_CHECK
+do you have cheese,AVAILABILITY_CHECK
+any mutta left,AVAILABILITY_CHECK
+1litre nalla ennai pack panningla,BULK_ORDER
+arisi kasta iruku,COMPLAINT
+gd evng!,GREETING
+do you carry lizol,AVAILABILITY_CHECK
+brinjal available,AVAILABILITY_CHECK
+1dozen jeera vennum,BULK_ORDER
+wat is cost of tide,PRICE_ENQUIRY
+toothpaste prise,PRICE_ENQUIRY
+namaste,GREETING
+noodles price enna bro,PRICE_ENQUIRY
+hey!,GREETING
+elachi irukka pa,AVAILABILITY_CHECK
+rice stock ah,AVAILABILITY_CHECK
+sup?,GREETING
+milk irukka pa,AVAILABILITY_CHECK
+vermicelli evlo aagum,PRICE_ENQUIRY
+cauliflower stock iruka bro,AVAILABILITY_CHECK
+noodles tharuveenga,AVAILABILITY_CHECK
+tamarind avilable,AVAILABILITY_CHECK
+tea powder evlo,PRICE_ENQUIRY
+haai!,GREETING
+do you keep ponni rice,AVAILABILITY_CHECK
+5kg wheat kavanum,BULK_ORDER
+vengayam vangalam,AVAILABILITY_CHECK
+paneer availabel,AVAILABILITY_CHECK
+do you keep orange,AVAILABILITY_CHECK
+anna ghee rate enna,PRICE_ENQUIRY
+maggi irukkuma sir,AVAILABILITY_CHECK
+i need 6pieces of ghee,BULK_ORDER
+lays cost enna da,PRICE_ENQUIRY
+is ladies finger available,AVAILABILITY_CHECK
+brinjel avum coconut avum iruka,MULTIPLE_ITEMS
+home delivery available,OUT_OF_SCOPE
+semolina eppadi iruku price,PRICE_ENQUIRY
+plantain irukkuma sir,AVAILABILITY_CHECK
+hello there,GREETING
+coriander evvalavu,PRICE_ENQUIRY
+give me 2litre kothamalli,BULK_ORDER
+romba thanks sir,THANKS
+boiled rice stock iruka bro,AVAILABILITY_CHECK
+price of arisi,PRICE_ENQUIRY
+buttermilk kidaikkuma,AVAILABILITY_CHECK
+ok seri,THANKS
+what is the price of mixture,PRICE_ENQUIRY
+do you accept upi?,OUT_OF_SCOPE
+open sunday?,OUT_OF_SCOPE
+paal prise,PRICE_ENQUIRY
+quality is going down,COMPLAINT
+arisi price enna,PRICE_ENQUIRY
+do u have onion,AVAILABILITY_CHECK
+can i get banana,AVAILABILITY_CHECK
+manjal cost enna,PRICE_ENQUIRY
+toothpaste price how much,PRICE_ENQUIRY
+i need green chilli and maida,MULTIPLE_ITEMS
+is raw rice available,AVAILABILITY_CHECK
+do u have cumin,AVAILABILITY_CHECK
+gd morning!,GREETING
+ok thnks,THANKS
+what is the rate of arisi,PRICE_ENQUIRY
+kirambu irukkuma sir,AVAILABILITY_CHECK
+bro dettol evlo,PRICE_ENQUIRY
+halfkg tide tharuveenga,BULK_ORDER
+iz murungakkai avaliable,AVAILABILITY_CHECK
+cumin price,PRICE_ENQUIRY
+late agiduchu,COMPLAINT
+toor dal kidaikuma,AVAILABILITY_CHECK
+egss iruka,AVAILABILITY_CHECK
+sup!,GREETING
+phonepay ok?,OUT_OF_SCOPE
+tometo iruka,AVAILABILITY_CHECK
+sambar powder vangalam,AVAILABILITY_CHECK
+nalla ennai 1litre kudungal,BULK_ORDER
+wat is arisi rate,PRICE_ENQUIRY
+sona masoori cost enna,PRICE_ENQUIRY
+manjal vilai sollu,PRICE_ENQUIRY
+anna drumstick rate enna,PRICE_ENQUIRY
+do you sell garam masala and onion,MULTIPLE_ITEMS
+is there kirambu,AVAILABILITY_CHECK
+cardamom price how much,PRICE_ENQUIRY
+any black gram left,AVAILABILITY_CHECK
+moong dal price sollu pa,PRICE_ENQUIRY
+both noodles and jeera iruka,MULTIPLE_ITEMS
+butter kidaikkuma,AVAILABILITY_CHECK
+semolina cost enna,PRICE_ENQUIRY
+do u hav pasta,AVAILABILITY_CHECK
+hand wash cost,PRICE_ENQUIRY
+pazham kidaikuma,AVAILABILITY_CHECK
+how much watermelon price ah,PRICE_ENQUIRY
+gpay panalam,OUT_OF_SCOPE
+coffee price sollu pa,PRICE_ENQUIRY
+have you got groundnut oil,AVAILABILITY_CHECK
+olive oil iruka,AVAILABILITY_CHECK
+is there lizol,AVAILABILITY_CHECK
+lays proce,PRICE_ENQUIRY
+anna 1litre rajma venam,BULK_ORDER
+1dozen tea powder kavanum,BULK_ORDER
+sambar powder prce,PRICE_ENQUIRY
+bro 1kg coffee vennum,BULK_ORDER
+pric of mustard,PRICE_ENQUIRY
+gingelly oil vilai sollu,PRICE_ENQUIRY
+shop timing?,OUT_OF_SCOPE
+noodles in stock,AVAILABILITY_CHECK
+bro coconut iruka,AVAILABILITY_CHECK
+5kg noodles venum,BULK_ORDER
+directions to shop?,OUT_OF_SCOPE
+detergent evvalavu,PRICE_ENQUIRY
+heloo,GREETING
+sona masoori vilai sollu,PRICE_ENQUIRY
+cheese in stock,AVAILABILITY_CHECK
+mixture irukkanga,AVAILABILITY_CHECK
+do you have detergent ah,AVAILABILITY_CHECK
+what is your address,OUT_OF_SCOPE
+dettol avilable,AVAILABILITY_CHECK
+wat is cost of jaggery,PRICE_ENQUIRY
+salt avum washing powder avum iruka,MULTIPLE_ITEMS
+anna egg rate enna,PRICE_ENQUIRY
+spinach and cloves stock iruka,MULTIPLE_ITEMS
+neram aachu delivery illai,COMPLAINT
+helo there!,GREETING
+good afternoon?,GREETING
+minimum order for delivery?,OUT_OF_SCOPE
+do you have guava and coconut oil both,MULTIPLE_ITEMS
+what is the rate of butter,PRICE_ENQUIRY
+contact number?,OUT_OF_SCOPE
+hi sir!,GREETING
+book 6pieces kurkure for me,BULK_ORDER
+rate of coffee,PRICE_ENQUIRY
+do you have boiled rice,AVAILABILITY_CHECK
+cost of beetroot,PRICE_ENQUIRY
+chilli powder stock availble,AVAILABILITY_CHECK
+how old is your shop,OUT_OF_SCOPE
+idli rice cost,PRICE_ENQUIRY
+tomato mosam agiduchu,COMPLAINT
+namkeen irukkanga,AVAILABILITY_CHECK
+pric of tamato,PRICE_ENQUIRY
+phonepay ok,OUT_OF_SCOPE
+what is your phone number,OUT_OF_SCOPE
+pepper stock availble,AVAILABILITY_CHECK
+pasta kidaikuma,AVAILABILITY_CHECK
+oil was rancid,COMPLAINT
+gd evng,GREETING
+do you carry rava,AVAILABILITY_CHECK
+is puli available,AVAILABILITY_CHECK
+nandri sir,THANKS
+sugar evvalavu,PRICE_ENQUIRY
+surf excel price sollunga sir,PRICE_ENQUIRY
+milk and brea iruka,MULTIPLE_ITEMS
+do you deliver,OUT_OF_SCOPE
+2 litr milk tharuveenga,BULK_ORDER
+yesterday onion was not good,COMPLAINT
+shop address sollu,OUT_OF_SCOPE
+thank u,THANKS
+how much does mustard cost,PRICE_ENQUIRY
+do u have soap,AVAILABILITY_CHECK
+please give fresh items,COMPLAINT
+maida also potato also iruka,MULTIPLE_ITEMS
+wht is prise of paneer,PRICE_ENQUIRY
+credit card accepted,OUT_OF_SCOPE
+puli iruka,AVAILABILITY_CHECK
+biscuit and orange iruka,MULTIPLE_ITEMS
+ponni rice availabel,AVAILABILITY_CHECK
+plantain price please,PRICE_ENQUIRY
+pomegranate price enna,PRICE_ENQUIRY
+order 250g pazham,BULK_ORDER
+urad dal irukka,AVAILABILITY_CHECK
+methi kidaikkuma,AVAILABILITY_CHECK
+do you keep detergent,AVAILABILITY_CHECK
+paal nalla illai,COMPLAINT
+hi da,GREETING
+shakkar stock ah,AVAILABILITY_CHECK
+helo!,GREETING
+vermicelli cost,PRICE_ENQUIRY
+jeera in stock,AVAILABILITY_CHECK
+can i get tea,AVAILABILITY_CHECK
+bro coconut oil evlo,PRICE_ENQUIRY
+rasam powder price sollunga sir,PRICE_ENQUIRY
+tamoto stock ah,AVAILABILITY_CHECK
+potato available,AVAILABILITY_CHECK
+helo?,GREETING
+bread pasi agiduchu,COMPLAINT
+wht is prise of maggi,PRICE_ENQUIRY
+rajma rate,PRICE_ENQUIRY
+order 6pieces semolina,BULK_ORDER
+how much is hand wash,PRICE_ENQUIRY
+tell me the price of kathirikkai,PRICE_ENQUIRY
+anna oats rate enna,PRICE_ENQUIRY
+can i get coconut oil,AVAILABILITY_CHECK
+2litre wheat pack panningla,BULK_ORDER
+surf excel irukka,AVAILABILITY_CHECK
+lays rate,PRICE_ENQUIRY
+thank you,THANKS
+phone number sollu?,OUT_OF_SCOPE
+hi sir?,GREETING
+tamarind kidaikkuma,AVAILABILITY_CHECK
+hw much is pepper,PRICE_ENQUIRY
+tomato vilai enna,PRICE_ENQUIRY
+pepper vilai enna,PRICE_ENQUIRY
+tomato rotten agiduchu anna,COMPLAINT
+whatsapp number?,OUT_OF_SCOPE
+papaya also ponni rice also iruka,MULTIPLE_ITEMS
+moong dal and cream iruka,MULTIPLE_ITEMS
+order 2litre wheat,BULK_ORDER
+mustard irukkanga,AVAILABILITY_CHECK
+wat is cost of chana dal,PRICE_ENQUIRY
+tea powder cost enna da,PRICE_ENQUIRY
+do you have detergent and paneer,MULTIPLE_ITEMS
+coriander kidaikuma,AVAILABILITY_CHECK
+vengayam proce,PRICE_ENQUIRY
+who is the owner?,OUT_OF_SCOPE
+kathirikkai available pa,AVAILABILITY_CHECK
+paal kedaichiruku,COMPLAINT
+got any paal,AVAILABILITY_CHECK
+what is your address?,OUT_OF_SCOPE
+have you got beans,AVAILABILITY_CHECK
+bro 12pieces mustard vennum,BULK_ORDER
+sunflower oil in stock,AVAILABILITY_CHECK
+watermelon and thenga iruka,MULTIPLE_ITEMS
+hey there!,GREETING
+do u have coconut,AVAILABILITY_CHECK
+do you have maida,AVAILABILITY_CHECK
+namkeen stock iruka,AVAILABILITY_CHECK
+order 500ml grapes,BULK_ORDER
+spinach kittaya,AVAILABILITY_CHECK
+chips evlo,PRICE_ENQUIRY
+tomato rate sollunga,PRICE_ENQUIRY
+is urulaikizhangu in stock,AVAILABILITY_CHECK
+urad dal stock ah,AVAILABILITY_CHECK
+garam masala and chips available ah,MULTIPLE_ITEMS
+ghee stock iruka,AVAILABILITY_CHECK
+coconut kidaikkuma,AVAILABILITY_CHECK
+do u hav fenugreek,AVAILABILITY_CHECK
+tea powder price please,PRICE_ENQUIRY
+wat is kothamalli rate,PRICE_ENQUIRY
+eppo open aagum?,OUT_OF_SCOPE
+how much does vim cost,PRICE_ENQUIRY
+price of manjal,PRICE_ENQUIRY
+atta price sollunga sir,PRICE_ENQUIRY
+cornflakes cost enna da,PRICE_ENQUIRY
+rice cost,PRICE_ENQUIRY
+toothpaste available na sollunga,AVAILABILITY_CHECK
+howdy!,GREETING
+drumstick irukkuma,AVAILABILITY_CHECK
+good morning!,GREETING
+chilli powder and raw banana stock iruka,MULTIPLE_ITEMS
+gd evng?,GREETING
+drumstick and bread available ah,MULTIPLE_ITEMS
+home delivery pannuveenga?,OUT_OF_SCOPE
+groundnut oil irukkanga,AVAILABILITY_CHECK
+i need 2kg of beetroot,BULK_ORDER
+what is puli price,PRICE_ENQUIRY
+sona masoori evlo aagum,PRICE_ENQUIRY
+last time brinjel was not fresh,COMPLAINT
+ladies finger prce,PRICE_ENQUIRY
+detergent vangalam,AVAILABILITY_CHECK
+pazham stock availble,AVAILABILITY_CHECK
+cumin evlo,PRICE_ENQUIRY
+credit card accepted?,OUT_OF_SCOPE
+hw much is sunflower oil,PRICE_ENQUIRY
+anna watermelon rate enna,PRICE_ENQUIRY
+iz urulaikizhangu avaliable,AVAILABILITY_CHECK
+elachi vachu irukenga,AVAILABILITY_CHECK
+rajma availabel,AVAILABILITY_CHECK
+i want 2kg onion,BULK_ORDER
+vengayam stock availble,AVAILABILITY_CHECK
+toothpaste also apple also iruka,MULTIPLE_ITEMS
+pric of potato,PRICE_ENQUIRY
+surf excel stock there,AVAILABILITY_CHECK
+pric of cumin,PRICE_ENQUIRY
+kothamalli eppadi iruku price,PRICE_ENQUIRY
+yo?,GREETING
+salt stock iruka,AVAILABILITY_CHECK
+got any mango,AVAILABILITY_CHECK
+give me 2packets atta,BULK_ORDER
+bro pazham evlo,PRICE_ENQUIRY
+do you have watermelon,AVAILABILITY_CHECK
+anna groundnut oil iruka,AVAILABILITY_CHECK
+gud morning,GREETING
+anna 6pieces orange venam,BULK_ORDER
+suger vilai enna,PRICE_ENQUIRY
+can you give 5kg grapes,BULK_ORDER
+coconut oil price sollu pa,PRICE_ENQUIRY
+potato irukkanga,AVAILABILITY_CHECK
+1litre manjal venum,BULK_ORDER
+how much is rava,PRICE_ENQUIRY
+250g grapes vennum,BULK_ORDER
+drumstick prce,PRICE_ENQUIRY
+do you have plantain,AVAILABILITY_CHECK
+how to reach your shop?,OUT_OF_SCOPE
+bro rava iruka,AVAILABILITY_CHECK
+the potato i bought was spoiled,COMPLAINT
+guava rate sollunga,PRICE_ENQUIRY
+tometo and onioin iruka,MULTIPLE_ITEMS
+miilk iruka,AVAILABILITY_CHECK
+do you sell drumstick and surf excel,MULTIPLE_ITEMS
+guava kittaya,AVAILABILITY_CHECK
+is puli in stock,AVAILABILITY_CHECK
+butter prise,PRICE_ENQUIRY
+call pannum number,OUT_OF_SCOPE
+vanakam sir!,GREETING
+namaste?,GREETING
+iz okra avaliable,AVAILABILITY_CHECK
+thankz,THANKS
+bro bread iruka,AVAILABILITY_CHECK
+brinjel available na sollunga,AVAILABILITY_CHECK
+methi stock iruka,AVAILABILITY_CHECK
+can i get milagai,AVAILABILITY_CHECK
+mango iruka,AVAILABILITY_CHECK
+order 2packets manjal,BULK_ORDER
+1packet fenugreek venum,BULK_ORDER
+curd available ah,AVAILABILITY_CHECK
+oats and coconut oil available ah,MULTIPLE_ITEMS
+yo,GREETING
+vanakkam bro!,GREETING
+last time urulaikizhangu quality was poor,COMPLAINT
+turmeric prce,PRICE_ENQUIRY
+how mch for methi,PRICE_ENQUIRY
+whn do u open,OUT_OF_SCOPE
+soap prce,PRICE_ENQUIRY
+butter stock iruka bro,AVAILABILITY_CHECK
+home delivery available?,OUT_OF_SCOPE
+good morning sir,GREETING
+5kg maida vennum,BULK_ORDER
+what is manga price,PRICE_ENQUIRY
+what is rate of detergent ah,PRICE_ENQUIRY
+what is kirambu price,PRICE_ENQUIRY
+iz pasta avaliable,AVAILABILITY_CHECK
+namkeen price enna,PRICE_ENQUIRY
+hi da?,GREETING
+what is rate of manga ah,PRICE_ENQUIRY
+thnk u,THANKS
+what is the rate of cloves,PRICE_ENQUIRY
+shampoo stock there,AVAILABILITY_CHECK
+sona masoori price sollunga sir,PRICE_ENQUIRY
+how much does detergent cost,PRICE_ENQUIRY
+groundnut oil evvalavu,PRICE_ENQUIRY
+vanakam,GREETING
+delivery time,OUT_OF_SCOPE
+anna green chilli iruka,AVAILABILITY_CHECK
+5 kh rice vennum,BULK_ORDER
+toothpaste and buttermilk available ah,MULTIPLE_ITEMS
+rava stock ah,AVAILABILITY_CHECK
+do you hav shakkar,AVAILABILITY_CHECK
+kurkure price enna,PRICE_ENQUIRY
+how much for urulaikizhangu,PRICE_ENQUIRY
+greetings!,GREETING
+hai?,GREETING
+anna raw rice iruka,AVAILABILITY_CHECK
+helo there,GREETING
+how to reach your shop,OUT_OF_SCOPE
+curd avialble,AVAILABILITY_CHECK
+do u hav brinajl,AVAILABILITY_CHECK
+pepper irukkuma,AVAILABILITY_CHECK
+helllo,GREETING
+any gingelly oil avalaible,AVAILABILITY_CHECK
+bread vilai sollu,PRICE_ENQUIRY
+what is the rate of fenugreek,PRICE_ENQUIRY
+do you carry thayir,AVAILABILITY_CHECK
+paal availabel,AVAILABILITY_CHECK
+rate of olive oil,PRICE_ENQUIRY
+what's up?,GREETING
+coconut rate sollunga,PRICE_ENQUIRY
+any moru avalaible,AVAILABILITY_CHECK
+vanakkam!,GREETING
+thayir kidaikkuma,AVAILABILITY_CHECK
+i need semolina and lays,MULTIPLE_ITEMS
+delivery cost,OUT_OF_SCOPE
+do you carry ghee,AVAILABILITY_CHECK
+fenugreek prce,PRICE_ENQUIRY
+hey?,GREETING
+whats up,GREETING
+paal irukka,AVAILABILITY_CHECK
+vanakam!,GREETING
+guava iruka,AVAILABILITY_CHECK
+riice had stnes,COMPLAINT
+how much thenga price ah,PRICE_ENQUIRY
+tell me the price of egg,PRICE_ENQUIRY
+turmeric available na sollunga,AVAILABILITY_CHECK
+brinjal prise enna,PRICE_ENQUIRY
+hi,GREETING
+bread was stale,COMPLAINT
+bro murungakkai iruka,AVAILABILITY_CHECK
+is noodles available,AVAILABILITY_CHECK
+atta rate enna,PRICE_ENQUIRY
+shop open ah?,OUT_OF_SCOPE
+how much does pazham cost,PRICE_ENQUIRY
+super thanks bro,THANKS
+mlk was bad,COMPLAINT
+beetroot price,PRICE_ENQUIRY
+riice price enna,PRICE_ENQUIRY
+lizol available,AVAILABILITY_CHECK
+10kg thenga tharuveenga,BULK_ORDER
+wht is prise of lizol,PRICE_ENQUIRY
+tell me the price of garam masala,PRICE_ENQUIRY
+coriander iruka,AVAILABILITY_CHECK
+bread in stock,AVAILABILITY_CHECK
+have you got butter,AVAILABILITY_CHECK
+rice quality poor,COMPLAINT
+is urad dal availabl,AVAILABILITY_CHECK
+both brinjel and pattai iruka,MULTIPLE_ITEMS
+thayir irukka pa,AVAILABILITY_CHECK
+vengayam available ah,AVAILABILITY_CHECK
+shakkar price please,PRICE_ENQUIRY
+wat is cost of elachi,PRICE_ENQUIRY
+cinnamon evlo,PRICE_ENQUIRY
+cabbage available,AVAILABILITY_CHECK
+gingelly oil stock iruka,AVAILABILITY_CHECK

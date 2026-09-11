@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import api from '../api/client'
-import { Send, Mic, MicOff, Trash2, Bot, CheckCircle, RefreshCw } from 'lucide-react'
+import { Send, Mic, MicOff, Trash2, Bot, CheckCircle, RefreshCw, Activity, ChevronDown, ChevronUp, ShieldCheck, Database, HelpCircle } from 'lucide-react'
 
 const QUICK_PROMPTS = [
   'How am I doing today?',
@@ -10,6 +10,70 @@ const QUICK_PROMPTS = [
   'Give me a discount strategy',
   'What is my best selling item?',
 ]
+
+function TraceBadge({ trace }) {
+  const [open, setOpen] = useState(false)
+  if (!trace) return null
+
+  return (
+    <div className="mt-2 text-xs border border-indigo-100 bg-indigo-50/70 rounded-xl overflow-hidden shadow-xs">
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full flex items-center justify-between px-3 py-1.5 text-indigo-700 hover:bg-indigo-100/50 transition-colors font-medium">
+        <div className="flex items-center gap-1.5">
+          <Activity size={13} className="text-indigo-600 animate-pulse" />
+          <span>Agent Trace: <strong className="font-semibold">{trace.intent}</strong></span>
+          {trace.grounded_source && (
+            <span className="bg-emerald-100 text-emerald-700 px-1.5 py-0.2 rounded text-[10px] font-semibold flex items-center gap-0.5">
+              <Database size={9} /> SQLite Grounded
+            </span>
+          )}
+          {trace.verification && (
+            <span className="bg-blue-100 text-blue-700 px-1.5 py-0.2 rounded text-[10px] font-semibold flex items-center gap-0.5">
+              <ShieldCheck size={9} /> Verified
+            </span>
+          )}
+        </div>
+        {open ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+      </button>
+
+      {open && (
+        <div className="p-3 bg-white border-t border-indigo-100 space-y-2 text-gray-700 font-mono text-[11px]">
+          <div className="grid grid-cols-2 gap-2">
+            <div>
+              <span className="text-gray-400 block text-[10px] uppercase font-sans">Intent (Session 1)</span>
+              <span className="font-semibold text-gray-900">{trace.intent}</span>
+            </div>
+            <div>
+              <span className="text-gray-400 block text-[10px] uppercase font-sans">Confidence</span>
+              <span>{Math.round((trace.confidence || 1) * 100)}%</span>
+            </div>
+          </div>
+
+          <div>
+            <span className="text-gray-400 block text-[10px] uppercase font-sans">Entities Extracted</span>
+            <pre className="bg-gray-50 p-1.5 rounded border border-gray-100 text-[10px] overflow-x-auto">
+              {JSON.stringify(trace.entities || {}, null, 2)}
+            </pre>
+          </div>
+
+          <div className="grid grid-cols-2 gap-2 pt-1 border-t border-gray-100">
+            <div>
+              <span className="text-gray-400 block text-[10px] uppercase font-sans">Tool Executed (Session 2)</span>
+              <span className="text-blue-600 font-medium">{trace.tool_executed || 'None (Read-only)'}</span>
+            </div>
+            <div>
+              <span className="text-gray-400 block text-[10px] uppercase font-sans">Safety Gate / Approval</span>
+              <span className="text-emerald-600 font-medium">
+                {String(trace.verification || 'Passed Safe')}
+              </span>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
 
 function ActionBadge({ action }) {
   if (!action || action.error) return null
@@ -84,6 +148,7 @@ export default function ChatPage() {
         content: res.data.response,
         timestamp: new Date().toISOString(),
         action_taken: res.data.action_taken || null,
+        trace: res.data.trace || null,
       }
       setMessages(prev => [...prev, aiMsg])
     } catch (e) {
@@ -212,6 +277,8 @@ export default function ChatPage() {
                     </div>
                     {/* Show action badge if this message triggered a DB update */}
                     <ActionBadge action={msg.action_taken} />
+                    {/* Course presentation: Expose the developer trace (Intent, Grounding, Tools, Verification) */}
+                    <TraceBadge trace={msg.trace} />
                     <p className="text-xs text-gray-300 mt-1 ml-1">
                       {new Date(msg.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                     </p>

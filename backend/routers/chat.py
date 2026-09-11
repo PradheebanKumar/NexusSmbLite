@@ -88,17 +88,63 @@ async def send_message(
 
     messages = [{"role": m.role, "content": m.content} for m in history]
 
-    system_prompt = build_owner_system_prompt(owner, db)
+    # ── Sessions 1 & 3: Intent Decomposition & Source Authority Grounding ──
+    from backend.agents.intent_router import IntentRouter
+    from backend.agents.tools import AgentToolRegistry
 
-    # Call Claude
+    router_engine = IntentRouter(db, owner.id)
+    decomp = router_engine.decompose(req.message)
+    intent = decomp.get("intent", "GENERAL_CONVERSATION")
+    entities = decomp.get("entities", {})
+    grounded = router_engine.ground_context(entities)
+
+    trace = {
+        "intent": intent,
+        "confidence": decomp.get("confidence", 1.0),
+        "entities": entities,
+        "grounded_source": bool(grounded.get("item_record")),
+        "clarification_requested": False,
+        "tool_executed": None,
+        "verification": None,
+    }
+
+    # Session 1: If ambiguous, clarify with user rather than guessing
+    if intent == "AMBIGUOUS" and decomp.get("clarification_question"):
+        clarification_text = decomp["clarification_question"]
+        trace["clarification_requested"] = True
+        assistant_msg = models.Conversation(owner_id=owner.id, role="assistant", content=clarification_text)
+        db.add(assistant_msg)
+        db.commit()
+        return {
+            "response": clarification_text,
+            "action_taken": None,
+            "trace": trace
+        }
+
+    # Session 2: If actionable intent, execute through Tool Registry with safety verification
+    tool_summary = ""
+    action_taken = None
+    if intent.startswith("ACTION_"):
+        tools_engine = AgentToolRegistry(db, owner.id)
+        action_taken, tool_summary = tools_engine.execute_tool(intent, entities, grounded)
+        trace["tool_executed"] = intent
+        trace["verification"] = action_taken.get("verified", False) or action_taken.get("action")
+
+    system_prompt = build_owner_system_prompt(owner, db)
+    if grounded.get("item_record"):
+        rec = grounded["item_record"]
+        system_prompt += f"\n\nGROUNDED RECORD FOR '{rec['item_name']}': Stock={rec['quantity']}{rec['unit']}, Cost=₹{rec['cost_price']}, Sell=₹{rec['selling_price']}, Margin={rec['margin_pct']}%."
+    if tool_summary:
+        system_prompt += f"\n\nNOTE: The following action was just processed: {tool_summary}. Confirm this nicely to the owner."
+
+    # Call Claude / Gemini
     try:
         response = chat_with_context(system_prompt, messages, max_tokens=512)
     except Exception as e:
         response = f"Sorry, I'm having trouble connecting right now. Error: {str(e)}"
 
-    # Check if response contains an action to record
-    action_taken = None
-    if "ACTION:RECORD|" in response:
+    # Check if legacy response contains an action to record (fallback compatibility)
+    if not action_taken and "ACTION:RECORD|" in response:
         lines = response.split("\n")
         clean_lines = []
         for line in lines:
@@ -118,27 +164,14 @@ async def send_message(
     db.add(assistant_msg)
     db.commit()
 
-    # Append a small confirmation if action was taken successfully
-    if action_taken and "error" not in action_taken:
-        atype = action_taken.get("type", "")
-        if atype == "price_update":
-            item = action_taken.get("item", "")
-            sp = action_taken.get("selling_price")
-            cp = action_taken.get("cost_price")
-            parts = []
-            if sp: parts.append(f"sell ₹{sp}")
-            if cp: parts.append(f"cost ₹{cp}")
-            response += f"\n\n✅ *{item} updated: {', '.join(parts)}*"
-        elif atype == "purchase":
-            response += f"\n\n✅ *Stock updated for {action_taken.get('items_updated', 0)} item(s)*"
-        elif atype == "sale":
-            response += f"\n\n✅ *Sale recorded for {action_taken.get('items_recorded', 0)} item(s)*"
-        elif atype == "expense":
-            response += f"\n\n✅ *Expense ₹{action_taken.get('amount')} recorded*"
+    # Append a small confirmation if action was taken successfully and not already mentioned
+    if action_taken and "error" not in action_taken and tool_summary and tool_summary not in response:
+        response += f"\n\n{tool_summary}"
 
     return {
         "response": response,
         "action_taken": action_taken,
+        "trace": trace
     }
 
 

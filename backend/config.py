@@ -14,6 +14,18 @@ class Settings(BaseSettings):
     TWILIO_AUTH_TOKEN: str = ""
     TWILIO_WHATSAPP_NUMBER: str = "whatsapp:+14155238886"
 
+    # Comma-separated browser origins allowed to call the API. The deployed
+    # Vercel URL will be supplied through an environment variable.
+    CORS_ORIGINS: str = "http://localhost:5173,http://localhost:3000"
+
+    # Keep the in-process scheduler opt-in so cloud restarts or multiple
+    # instances never create duplicate scheduled jobs.
+    ENABLE_SCHEDULER: bool = True
+
+    @property
+    def cors_origins(self) -> list[str]:
+        return [origin.strip().rstrip("/") for origin in self.CORS_ORIGINS.split(",") if origin.strip()]
+
     class Config:
         env_file = ".env"
 

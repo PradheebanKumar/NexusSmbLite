@@ -7,6 +7,7 @@ from backend.services.scheduler import start_scheduler, stop_scheduler
 from backend import models, auth
 from backend.agents.orchestrator import AgentOrchestrator
 from backend.database import get_db
+from backend.config import settings
 from sqlalchemy.orm import Session
 
 
@@ -14,10 +15,11 @@ from sqlalchemy.orm import Session
 async def lifespan(app: FastAPI):
     # Create all tables
     Base.metadata.create_all(bind=engine)
-    # Start background scheduler
-    start_scheduler()
+    if settings.ENABLE_SCHEDULER:
+        start_scheduler()
     yield
-    stop_scheduler()
+    if settings.ENABLE_SCHEDULER:
+        stop_scheduler()
 
 
 app = FastAPI(
@@ -29,7 +31,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000"],
+    allow_origins=settings.cors_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -51,6 +53,12 @@ app.include_router(shop_public.router)   # public — no auth, for customers
 @app.get("/")
 def root():
     return {"message": "Nexus-SMB Lite API", "status": "running", "docs": "/docs"}
+
+
+@app.get("/health", include_in_schema=False)
+def health():
+    """Lightweight endpoint used by hosting health checks and the frontend."""
+    return {"status": "ok"}
 
 
 @app.post("/api/agents/run-check")

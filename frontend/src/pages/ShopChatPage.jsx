@@ -10,11 +10,8 @@
  */
 import { useState, useRef, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import axios from 'axios'
+import { publicApi } from '../api/client'
 import { Send, X, Tag, ChevronDown, ChevronUp, Edit2 } from 'lucide-react'
-
-// No auth headers — this is fully public
-const publicApi = axios.create({ baseURL: 'http://localhost:8000/api' })
 
 const INTENT_COLORS = {
   AVAILABILITY_CHECK: 'bg-blue-100 text-blue-600',

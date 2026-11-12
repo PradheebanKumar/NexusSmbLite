@@ -65,6 +65,67 @@ Never make up data — only record what the owner explicitly states.
 Keep responses under 120 words. Be specific with numbers from the data above."""
 
 
+def build_demo_response(message: str, owner: models.Owner, db: Session, tool_summary: str = "") -> str:
+    """Useful, data-grounded response for free deployments without an AI key."""
+    if tool_summary:
+        return tool_summary
+
+    text = message.lower()
+    today_start = datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0)
+    month_start = datetime.utcnow().replace(day=1, hour=0, minute=0, second=0, microsecond=0)
+    sales = db.query(models.Sale).filter(
+        models.Sale.owner_id == owner.id,
+        models.Sale.date >= today_start,
+    ).all()
+    inventory = db.query(models.Inventory).filter(models.Inventory.owner_id == owner.id).all()
+    expenses = db.query(models.Expense).filter(
+        models.Expense.owner_id == owner.id,
+        models.Expense.date >= month_start,
+    ).all()
+
+    revenue = sum(float(s.total_amount or 0) for s in sales)
+    profit = 0.0
+    for sale in sales:
+        item = next((i for i in inventory if i.item_name.lower() == sale.item_name.lower()), None)
+        if item:
+            profit += (float(sale.selling_price or 0) - float(item.cost_price or 0)) * float(sale.quantity_sold or 0)
+
+    low_stock = [i for i in inventory if i.quantity <= i.low_stock_threshold]
+    if "restock" in text or "stock" in text:
+        if low_stock:
+            items = ", ".join(f"{i.item_name} ({i.quantity:g} {i.unit})" for i in low_stock[:5])
+            return f"Restock priority: {items}. These items are at or below their minimum level."
+        return f"All {len(inventory)} inventory items are above their low-stock thresholds."
+
+    if "best" in text or "selling" in text:
+        totals = {}
+        for sale in db.query(models.Sale).filter(models.Sale.owner_id == owner.id).all():
+            totals[sale.item_name] = totals.get(sale.item_name, 0) + float(sale.quantity_sold or 0)
+        if totals:
+            item, qty = max(totals.items(), key=lambda pair: pair[1])
+            return f"Your best-selling recorded item is {item}, with {qty:g} units sold."
+        return "No sales are recorded yet. Add a sale and I’ll identify your best-selling item."
+
+    if "margin" in text or "profit" in text:
+        return f"Today’s recorded revenue is ₹{revenue:,.2f} and estimated gross profit is ₹{profit:,.2f}."
+
+    if "expense" in text:
+        total = sum(float(e.amount or 0) for e in expenses)
+        return f"You have recorded ₹{total:,.2f} in expenses this month across {len(expenses)} entries."
+
+    if "how am i" in text or "today" in text or "revenue" in text:
+        return (
+            f"Today you have {len(sales)} recorded sale(s), ₹{revenue:,.2f} in revenue, "
+            f"and estimated gross profit of ₹{profit:,.2f}. "
+            f"{len(low_stock)} item(s) currently need restocking."
+        )
+
+    return (
+        f"I’m running in free demo mode for {owner.shop_name}. I can report live revenue, profit, "
+        "inventory, expenses, best sellers, and execute clearly stated stock or sales actions."
+    )
+
+
 class ChatMessage(BaseModel):
     message: str
 
@@ -141,7 +202,7 @@ async def send_message(
     try:
         response = chat_with_context(system_prompt, messages, max_tokens=512)
     except Exception as e:
-        response = f"Sorry, I'm having trouble connecting right now. Error: {str(e)}"
+        response = build_demo_response(req.message, owner, db, tool_summary)
 
     # Check if legacy response contains an action to record (fallback compatibility)
     if not action_taken and "ACTION:RECORD|" in response:

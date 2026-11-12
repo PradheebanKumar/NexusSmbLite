@@ -11,6 +11,7 @@ Session 3 (Know & Remember):
 - Context Engineering: Feeds exact business records into prompt
 """
 import json
+import re
 from typing import Dict, Any, Optional
 from sqlalchemy.orm import Session
 from sqlalchemy import func
@@ -70,15 +71,94 @@ Respond ONLY with valid JSON in this exact structure:
             parsed = json.loads(raw.strip())
             return parsed
         except Exception as e:
-            # Fallback heuristic if LLM call fails
+            # Free deployment mode: keep the core agent actions usable even
+            # when no Gemini key is configured.
+            result = self._heuristic_decompose(user_message)
+            result["fallback_mode"] = True
+            return result
+
+    @staticmethod
+    def _heuristic_decompose(user_message: str) -> Dict[str, Any]:
+        text = " ".join(user_message.strip().lower().split())
+        empty_entities = {
+            "item_name": None,
+            "quantity": None,
+            "unit": None,
+            "price": None,
+            "expense_type": None,
+            "expense_amount": None,
+        }
+
+        def result(intent: str, confidence: float, entities=None, question=None):
             return {
-                "intent": "GENERAL_CONVERSATION",
-                "confidence": 0.5,
-                "entities": {"item_name": None},
-                "missing_info": None,
-                "clarification_question": None,
-                "error": str(e)
+                "intent": intent,
+                "confidence": confidence,
+                "entities": {**empty_entities, **(entities or {})},
+                "missing_info": question,
+                "clarification_question": question,
             }
+
+        money = re.findall(r"(?:₹|rs\.?|inr)?\s*(\d+(?:\.\d+)?)", text)
+        expense_types = ("rent", "electricity", "salary", "supplier", "transport")
+        expense_type = next((kind for kind in expense_types if kind in text), None)
+        if expense_type and money:
+            return result("ACTION_RECORD_EXPENSE", 0.9, {
+                "expense_type": expense_type,
+                "expense_amount": float(money[-1]),
+            })
+
+        price_match = re.search(
+            r"(?:change|set|update)\s+(.+?)\s+(?:sell(?:ing)?\s+|cost\s+)?price"
+            r"(?:\s+(?:to|is))?\s*(?:₹|rs\.?)?\s*(\d+(?:\.\d+)?)",
+            text,
+        )
+        if price_match:
+            return result("ACTION_UPDATE_PRICE", 0.92, {
+                "item_name": price_match.group(1).strip(),
+                "price": float(price_match.group(2)),
+            })
+
+        action_patterns = (
+            ("ACTION_RECORD_SALE", r"(?:sold|sell)\s+(\d+(?:\.\d+)?)\s+(.+)"),
+            ("ACTION_ADJUST_STOCK", r"(?:bought|purchased|received|add(?:ed)?|restocked?)\s+(\d+(?:\.\d+)?)\s+(.+)"),
+        )
+        for intent, pattern in action_patterns:
+            match = re.search(pattern, text)
+            if not match:
+                continue
+            qty = float(match.group(1))
+            remainder = re.sub(r"\s+today$", "", match.group(2)).strip()
+            price = None
+            price_suffix = re.search(r"\s+(?:at|for)\s*(?:₹|rs\.?)?\s*(\d+(?:\.\d+)?)$", remainder)
+            if price_suffix:
+                price = float(price_suffix.group(1))
+                remainder = remainder[:price_suffix.start()].strip()
+            parts = remainder.split()
+            known_units = {"kg", "kgs", "litre", "litres", "units", "packets"}
+            explicit_unit = bool(parts and parts[0] in known_units)
+            unit = parts[0] if explicit_unit else "units"
+            item_name = " ".join(parts[1:] if explicit_unit else parts)
+            return result(intent, 0.9, {
+                "item_name": item_name,
+                "quantity": qty,
+                "unit": unit,
+                "price": price,
+            })
+
+        if any(word in text for word in ("discount", "offer", "promotion")):
+            return result("PROMOTION", 0.75)
+
+        if any(word in text for word in (
+            "how am i", "profit", "revenue", "stock", "restock", "selling",
+            "best", "margin", "expense", "analytics", "doing today",
+        )) or "?" in text:
+            return result("QUERY_ANALYTICS", 0.8)
+
+        if any(word in text for word in ("change", "update", "bought", "sold", "paid")):
+            question = "Please include the item, quantity, and price needed for that action."
+            return result("AMBIGUOUS", 0.65, question=question)
+
+        return result("GENERAL_CONVERSATION", 0.7)
 
     def ground_context(self, entities: Dict[str, Any]) -> Dict[str, Any]:
         """

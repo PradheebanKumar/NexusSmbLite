@@ -11,6 +11,8 @@ _model = genai.GenerativeModel("gemini-2.5-flash")
 
 
 def _call(prompt: str, max_tokens: int = 1024) -> str:
+    if not settings.GEMINI_API_KEY:
+        raise RuntimeError("AI provider is not configured; using free demo fallback")
     try:
         response = _model.generate_content(
             prompt,
